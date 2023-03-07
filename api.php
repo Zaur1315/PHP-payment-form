@@ -1,17 +1,15 @@
 <?php
 (error_reporting(-1));
 
-$url = {{url}}
-$merchant_key = {{MID}}
-$merchant_pass = {{PASS}}
+
 $order_number = 'order-1234';
 $order_amount = number_format($_POST['payment'],2,'.','');;
 $order_currency = 'AZN';
 $order_description = 'Important gift';
 $customer_name = $_POST['first_name'].' '.$_POST["last_name"];
 $customer_email = $_POST['mail'];
-$cancel_url = 'https://example.com/cancel';
-$success_url = 'https://example.com/success';
+$cancel_url = 'http://127.0.0.1/azuf/cancel.php';
+$success_url = 'http://127.0.0.1/azuf/success.php';
 $billing_country = 'US';
 $billing_state = 'CA';
 $billing_city = 'Los Angeles';
@@ -32,9 +30,9 @@ $session_hash = $sha1_hash;
 var_dump($session_hash);
 
 $payment_data = array(
-    "merchant_key" => 'c0892a60-af39-11eb-affd-fac77cf0e095',
+    "merchant_key" => $merchant_key,
     "operation" => 'purchase',
-    'methods' => array('card'),
+    'methods' => array(),
     'order' => array(
         'number' => $order_number,
         'amount' => $order_amount,
@@ -75,4 +73,6 @@ if (isset($json_response['redirect_url'])) {
     var_dump($json_response);
     echo 'Error: redirect URL not found in response';
 }
-?>
+
+
+
