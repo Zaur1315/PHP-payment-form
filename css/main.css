@@ -1,0 +1,123 @@
+@import "./reset.css";
+
+body{
+    font-family:' HelveticaNeue','Helvetica', 'Neue','helvetica','Sans-Serif';
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* align-items:center; */
+    justify-content: space-between;
+}
+
+
+
+.language__links a{
+    font-family:sans-serif;
+    margin: 0 15px;
+    color: rgb(43,108,163)
+}
+
+.language__links a:hover{
+    text-decoration: none;
+}
+
+.language__links .deactive{
+    color: #c7c7c7;
+}
+
+.language__links .deactive:hover{
+    cursor: unset;
+}
+
+.header_wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin: 0 49px;;
+}
+
+
+.logo_img{
+    max-width: 231px;
+}
+
+
+
+/* FORM */
+main{
+    /* min-height: 100vh; */
+    display: flex;
+    align-items: center
+}
+
+.main_wrap{
+    width: 700px;
+    margin: 0 auto;
+}
+
+
+.form_row{
+    display: flex;
+    width: 100%;
+
+}
+
+.form_col{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+
+.form_col input{
+    border: solid 1px rgb(205,175,140);
+    font-size: 20px;
+    border-radius:10px;
+    padding: 14px;
+}
+
+.check{
+    /* flex-direction: row; */
+    justify-content: flex-end;
+    
+}
+
+.check label{
+    font-family: sans-serif;
+    color: rgb(131, 103, 71);
+}
+#check{
+    margin: 0 10px;
+    
+}
+
+.input_lab{
+    background-color: #fff;
+    color: rgb(131, 103, 71);
+    position: absolute;
+    top: 1px;
+    left: 20px;
+    padding: 0 4px;
+}
+
+.form_col .submit{
+    background:#FF0000;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 200;
+    color:#fff;
+    padding: 17px;
+
+}
+
+
+
+
+
+footer{
+    min-height: 150px;
+    background-color:rgb(43, 108, 163);
+}
