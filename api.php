@@ -41,7 +41,8 @@ $payment_data = array(
     ),
     'cancel_url' => $cancel_url,
     'success_url' => $success_url,
-    'customer' => array('name' => $customer_name, 'email' => $customer_email),
+    'customer' => array('email' => $customer_email),
+//    'customer' => array('name' => $customer_name, 'email' => $customer_email),
     "billing_address" => array(
         "country" => $billing_country,
         "state" => $billing_state,

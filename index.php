@@ -29,38 +29,38 @@
                 <div class="form_row">
                     <div class="form_col">
                         <label class="input_lab" for="first_name">Имя</label>
-                        <input type="text" id="first_name" name="first_name">
+                        <input type="text" placeholder="Мурад" id="first_name" name="first_name">
                     </div>                
                     <div class="form_col">
                         <label class="input_lab" for="last_name">Фамилия</label>
-                        <input type="text" id="last_name" name="last_name">
+                        <input type="text" placeholder="Мурадов" id="last_name" name="last_name">
                     </div>
                 </div>
                 <div class="form_row">
                     <div class="form_col">
                         <label class="input_lab" for="mail">E-Mail</label>
-                        <input type="email" id="mail" name="mail">
+                        <input required type="email" placeholder="murad_muradov@mail.com" id="mail" name="mail">
                     </div>                
                     <div class="form_col">
                         <label class="input_lab" for="phone">Телефон</label>
-                        <input type="tel" id="phone" name="phone">
+                        <input type="tel" value="+994 (" id="phone" name="phone">
                     </div>
                 </div>
                 <div class="form_row">
                     <div class="form_col">
                         <label class="input_lab" for="fin">FIN</label>
-                        <input type="text" maxlength="6" minlength="6" id="fin" name="fin">
+                        <input type="text" placeholder="SD545C" maxlength="6" minlength="6" id="fin" name="fin">
                     </div> 
                     <div class="form_col">
                         <label class="input_lab" for="sum">Сумма</label>
-                        <input type="number" id="payment" name="payment">
+                        <input step="1"  type="number" id="payment" name="payment" >
                     </div>                
                 </div>
                 <div class="form_row">
-                    <div class="form_col check">
-                        <label for="check">
-                        <input type="checkbox" id="check" name="check">Пожертвовать анонимно</label>
-                    </div>
+<!--                    <div class="form_col check">-->
+<!--                        <label for="check">-->
+<!--                        <input type="checkbox" id="check" name="check">Пожертвовать анонимно</label>-->
+<!--                    </div>-->
                     <div class="form_col">
                         <input class="submit" type="submit" value="Перейти к оплате">
                     </div>
@@ -71,5 +71,9 @@
     <footer>
 
     </footer>
+
+    <script src="https://unpkg.com/imask"></script>
+    <script src="./js/script.js"></script>
+
 </body>
 </html>
