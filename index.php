@@ -39,7 +39,7 @@
                 <div class="form_row">
                     <div class="form_col">
                         <label class="input_lab" for="mail">E-Mail</label>
-                        <input required type="email" placeholder="murad_muradov@mail.com" id="mail" name="mail">
+                        <input type="email" placeholder="murad_muradov@mail.com" id="mail" name="mail">
                     </div>                
                     <div class="form_col">
                         <label class="input_lab" for="phone">Телефон</label>
@@ -52,17 +52,23 @@
                         <input type="text" placeholder="SD545C" maxlength="6" minlength="6" id="fin" name="fin">
                     </div> 
                     <div class="form_col">
-                        <label class="input_lab" for="sum">Сумма</label>
-                        <input step="1"  type="number" id="payment" name="payment" >
+                        <label class="input_lab" for="sum">Сумма <span class='star'>*</span></label>
+                        <input step="1" required type="number" id="payment" name="payment" >
                     </div>                
                 </div>
                 <div class="form_row">
+
 <!--                    <div class="form_col check">-->
 <!--                        <label for="check">-->
 <!--                        <input type="checkbox" id="check" name="check">Пожертвовать анонимно</label>-->
 <!--                    </div>-->
                     <div class="form_col">
                         <input class="submit" type="submit" value="Перейти к оплате">
+                    </div>
+                    <div class="form_col">
+                        <p class="not_p">
+                            Поля отмеченные <span class="star">*</span> обязательны к заполнению.
+                        </p>
                     </div>
                 </div>
             </form>
